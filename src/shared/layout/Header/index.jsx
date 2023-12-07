@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { useLazyUserByIdQuery } from "src/redux/api/authApi/authApi";
-import { SIDE_URL } from "shared/layout/SideMenu/data";
+// import { SIDE_URL } from "shared/layout/SideMenu/data";
 import { imgBaseUrl } from "src/redux/api/axiosBase";
 // import { NotificationBing } from "src/assets/svgs";
 import { Urls } from "src/shared/constants/url";
@@ -15,16 +15,16 @@ const Header = () => {
   const user = useSelector((state) => state?.user?.user);
   const [userById, { data, isLoading }] = useLazyUserByIdQuery();
   const { pathname } = useLocation();
-  const urls = SIDE_URL?.filter(
-    (item) => item?.url === `/${pathname.split("/")[1]}`
-  );
+  // const urls = SIDE_URL?.filter(
+  //   (item) => item?.url === `/${pathname.split("/")[1]}`
+  // );
   useEffect(() => {
     userById({ userId: user?.id });
   }, [user]);
 
   return (
     <div className={styles.Header}>
-      <div className={styles.HeaderLeft}>{urls[0]?.inner}</div>
+      {/* <div className={styles.HeaderLeft}>{urls[0]?.inner}</div> */}
 
       <div className={`${styles.HeaderRight} d-flex align-items-center`}>
         <Link to={`${Urls?.PROFILE}${Urls.PROFILE_INFO}`}>

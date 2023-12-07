@@ -19,7 +19,10 @@ import { LangName } from "src/shared/constants/lang";
 import { useSelector } from "react-redux";
 
 const Create = ({ countrieData, setIsViewModal, visiblity, isViewModal }) => {
-  const { roleName, countryId } = useSelector((state) => state?.user?.userById);
+  const test = useSelector((state) => state?.user?.userById);
+  const roleName = test?.roleName
+  const countryId = test?.countryId
+  
   const LOCAL_ADMIN = "Local Admin";
 
   const handleClose = () => {
@@ -31,7 +34,6 @@ const Create = ({ countrieData, setIsViewModal, visiblity, isViewModal }) => {
   const [customOfficesCreate, { isSuccess, isLoading, error }] =
     useCustomsOfficesCreateMutation();
 
-  console.log(error?.status);
   const hadleCustomOfficesCreate = (values) => {
     customOfficesCreate({
       countryId: roleName == LOCAL_ADMIN ? countryId : values?.countryId,

@@ -18,6 +18,9 @@ export const Profile = () => {
   const { id } = useSelector((state) => state?.user?.user);
   const [userById, { data }] = useLazyUserByIdQuery();
 
+
+  console.log(pathname)
+
   useEffect(() => {
     userById({ userId: id });
   }, []);

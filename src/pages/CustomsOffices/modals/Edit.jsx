@@ -28,7 +28,9 @@ const Edit = ({
   visiblity,
   customOfficeByIdIsLoading,
 }) => {
-  const { roleName, countryId } = useSelector((state) => state?.user?.userById);
+  const test = useSelector((state) => state?.user?.userById);
+  const roleName = test?.roleName
+  const countryId = test?.countryId
   const LOCAL_ADMIN = "Local Admin";
   const { data: customOfficeData, isLoading: officeIsLoading } =
     useCustomsOfficesFilterQuery({
