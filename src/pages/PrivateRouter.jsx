@@ -30,7 +30,7 @@ const PrivateRouter = () => {
         />
         <Route path={Urls.PROFILE_PERMISSIONS} element={<Permissions />} />
       </Route>
-      <Route path="*" element={<Navigate replace to={Urls.CONTINENTS} />} />
+      {/* <Route path="*" element={<Navigate replace to={Urls.CONTINENTS} />} /> */}
     </Routes>
   );
 };

@@ -26,7 +26,7 @@ export default function ContinentsTable(params) {
     handleChangeRowsPerPage,
     handleChangePage,
   } = params;
-  const { roleName } = useSelector((state) => state?.user?.user);
+  const roleName  = useSelector((state) => state?.user?.user?.roleName);
   return (
     <>
       <TableContainer className="table-container" component={Paper}>

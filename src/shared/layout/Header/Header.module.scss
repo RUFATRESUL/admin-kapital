@@ -3,7 +3,8 @@
 .Header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: end;
   padding: 20px 0;
   border-bottom: 2px solid #dadcde;
   &Left {
