@@ -1,0 +1,662 @@
+@import "fonts";
+@import "variables";
+@import "globalmixins";
+@import "reset";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "stepper.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 100% !important;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter" !important;
+  background-color: #fcfdfd !important;
+  line-height: 1.3 !important;
+}
+.h-100vh {
+  height: 100vh !important;
+}
+.h-100 {
+  height: 100% !important;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.crocusoft-link {
+  margin-bottom: 10px;
+  align-items: center;
+  h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+  a {
+    display: inline;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    img {
+      margin-inline: 7px;
+    }
+  }
+  span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #ffffff;
+  }
+}
+.active {
+  background: #ffffff;
+  border-radius: 12px;
+  display: block;
+  font-family: "Inter" !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 22px !important;
+  letter-spacing: 0.0016em !important;
+  color: #14458d !important;
+  text-align: justify;
+}
+.activeTab {
+  background: #bebbbbd2 !important;
+  // border-radius: 12px;
+  display: block;
+  font-family: "Inter" !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  // line-height: 22px !important;
+  // letter-spacing: 0.0016em !important;
+  color: black !important;
+  text-align: justify;
+}
+
+.react-datepicker__triangle::after {
+  display: none !important;
+}
+
+.react-datepicker__input-container input {
+  @include all-design(#051327, 16px, normal, 400, 16px);
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #dadcde;
+  border-radius: 12px;
+  padding: 4px 16px;
+  opacity: 0.8;
+
+  &::placeholder {
+    @include all-design(#051327, 16px, normal, 400, 16px);
+  }
+}
+
+.react-datepicker__input-container input:focus-visible {
+  outline: none;
+}
+
+.react-datepicker__input-container {
+  margin-right: 20px;
+}
+
+.react-datepicker {
+  border: none !important;
+  padding-top: 12px !important;
+}
+
+.react-datepicker__header {
+  background: #fff !important;
+  border: none !important;
+}
+
+.react-datepicker__current-month {
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  line-height: 24px !important;
+  color: #1d3363 !important;
+}
+
+.react-datepicker__day-names {
+  margin-top: 12px !important;
+}
+
+.react-datepicker__day-name {
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  line-height: 16px !important;
+  font-family: "Inter" !important;
+  margin: 10px !important;
+  color: #1d3363 !important;
+  opacity: 0.5 !important;
+}
+
+.react-datepicker__day {
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  line-height: 16px !important;
+  font-family: "Inter" !important;
+  margin: 5px !important;
+  padding: 8px !important;
+  width: 32px !important;
+}
+
+.react-datepicker__day--selected {
+  background: #2860db !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+}
+
+.react-datepicker-wrapper {
+  margin-right: 20px;
+  /* margin-bottom: 30px; */
+}
+
+.react-datepicker__day--selected:hover {
+  background: #2860db !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+}
+
+.react-datepicker__navigation--previous {
+  margin-top: 16px !important;
+  margin-left: 12px !important;
+  border: 1px solid #dddddd !important;
+  border-radius: 8px !important;
+}
+.react-datepicker__navigation-icon {
+  top: 1px !important;
+}
+.react-datepicker__navigation--next {
+  margin-top: 16px !important;
+  margin-right: 12px !important;
+  border: 1px solid #dddddd !important;
+  border-radius: 8px !important;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #1d3363 !important;
+  border-width: 2px 2px 0 0 !important;
+  left: -4px !important;
+  top: 7px !important;
+}
+
+.datepicker-img {
+  position: absolute;
+  top: 17px;
+  left: 10px;
+}
+
+.datepicker-design .react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.datepicker-design img {
+  right: 15px;
+  left: unset !important;
+}
+
+.datepicker-design input {
+  padding-left: 20px !important;
+}
+
+.datepicker-design .react-datepicker button {
+  padding: unset !important;
+  background: unset !important;
+  border-color: unset !important;
+  border: 1px solid #dddddd !important;
+  // width: 10px !important;
+}
+.MuiTableHead-root {
+  background: #f2f3f5;
+
+  tr {
+    th {
+      border: none;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.0016em;
+      color: #13181e;
+    }
+  }
+}
+.tableBodyIsOpen {
+  &:nth-child(2n-1) {
+    th,
+    td {
+      color: #14458d !important;
+    }
+  }
+}
+
+.MuiTableBody-root {
+  tr {
+    &:nth-child(even) {
+      background-color: #f2f3f5;
+    }
+  }
+
+  .childTable {
+    tr {
+      &:nth-last-child(2) {
+        th,
+        td {
+          padding-inline: 55px;
+          border: none;
+          @include all-design(#6d6e73, 16px, normal, 500, 24px);
+          color: #6d6e73 !important;
+        }
+      }
+      &:nth-child(2) {
+        th {
+          padding-inline: 55px !important;
+          border: none !important;
+          color: #374253 !important;
+        }
+        td {
+          padding-inline: 55px;
+          border: none;
+          @include all-design(#374253, 16px, normal, 500, 24px);
+        }
+      }
+    }
+  }
+  .tableEditIcon {
+    background-color: red;
+    padding: 5px 4px;
+    background: #ffffff;
+    box-shadow: 0px 0px 4px rgba(8, 30, 64, 0.2);
+    border-radius: 1000px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  tr {
+    td,
+    th {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500 !important;
+      font-size: 16px !important;
+      line-height: 24px !important;
+      letter-spacing: 0.0016em;
+      color: #374253;
+      text-align: start !important;
+    }
+  }
+}
+
+.UserPermissionsModal {
+  .MuiFormControl-fullWidth {
+    max-width: 100%;
+  }
+  background: #0c1118da;
+  .modal-dialog {
+    max-width: 842px;
+    .modal-content {
+      background: #f9fafb;
+      .modal-header {
+        position: relative;
+
+        .Modal_Close_Icon {
+          cursor: pointer;
+          position: absolute;
+          right: 16px;
+          top: 16px;
+          svg {
+            width: 24px;
+            height: 24px;
+            transform: rotate(45deg);
+            path {
+              stroke: #13181e;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.all-delete-modal {
+  .MuiFormControl-fullWidth {
+    max-width: 100%;
+  }
+  background: #0c1118da;
+  .modal-dialog {
+    max-width: 542px;
+    .modal-content {
+      background: #f9fafb;
+      .modal-header {
+        position: relative;
+
+        .Modal_Close_Icon {
+          cursor: pointer;
+          position: absolute;
+          right: 16px;
+          top: 16px;
+          svg {
+            width: 24px;
+            height: 24px;
+            transform: rotate(45deg);
+            path {
+              stroke: #13181e;
+            }
+          }
+        }
+      }
+      .modal-body {
+        padding: 32px 15px;
+      }
+      .modal-footer {
+        border: none;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+      }
+    }
+  }
+}
+.FormControlInput {
+  background: #ffffff;
+  border: 1px solid #dadcde;
+  border-radius: 12px !important;
+  .MuiSelect-outlined,
+  .MuiInputBase-input {
+    padding: 12.5px 16px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.0016em;
+
+    color: #374253;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border: none;
+  }
+}
+
+.porfileContent {
+  margin-left: 12px;
+  position: relative;
+  display: inline-block;
+  border-radius: 100%;
+  width: 78px;
+  height: 64px;
+  background: rgba(20, 69, 141, 0.1);
+  .ProfileImgDiv {
+    position: absolute;
+    margin-bottom: 20px;
+    height: 50px;
+    top: 50%;
+    z-index: 8;
+    transform: translateY(-50%);
+
+    svg {
+      position: absolute;
+      top: 50%;
+      right: -61px;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+    }
+
+    .ProfileImgInput {
+      z-index: 233;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 64px;
+      width: 64px;
+      opacity: 0;
+      position: absolute;
+    }
+  }
+}
+.previewDiv {
+  position: relative;
+
+  .image-preview {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    margin-bottom: 16px;
+    object-fit: cover;
+  }
+}
+.MultipleSelect {
+  .select__control {
+    background: #ffffff !important;
+    border: 1px solid #dadcde !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+  }
+  .select__value-container {
+    padding: 10px !important;
+  }
+  .select__multi-value__label {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.0016em;
+    color: #051327;
+  }
+  .select__multi-value {
+    background: none !important;
+  }
+  .select__clear-indicator {
+    display: none !important;
+  }
+  .select__indicator-separator {
+    display: none !important;
+  }
+}
+.User_Table_Person_Img {
+  margin-right: 16px;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.StepBar {
+  position: relative;
+  top: -1px;
+}
+.landing-error {
+  font-family: "Inter";
+  font-size: 15px;
+  color: red;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.table-container {
+  overflow: unset !important;
+  .MuiTableRow-head {
+    th {
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid #dadcde;
+      padding: 8px 8px;
+    }
+  }
+  .MuiTableBody-root {
+    tr {
+      background-color: transparent;
+      th,
+      td {
+        font-size: 13px !important;
+        border: 1px solid #dadcde;
+        padding: 5px 8px;
+      }
+    }
+  }
+  .table-container-oparation {
+    display: flex;
+    gap: 16px;
+    button {
+      background-color: rgba(0, 0, 0, 0.048);
+      padding: 7px;
+      border-radius: 10px;
+      svg {
+        width: 19px;
+        height: 19px;
+      }
+      &:nth-child(1) {
+        svg {
+          fill: #8950fc;
+        }
+        &:hover {
+          background-color: #8950fc;
+          svg {
+            fill: #ffffff;
+          }
+        }
+      }
+      &:nth-child(2) {
+        svg {
+          fill: black;
+        }
+        &:hover {
+          background-color: black;
+          svg {
+            fill: #ffffff;
+          }
+        }
+      }
+      &:nth-child(3) {
+        svg {
+          fill: #f64e60;
+        }
+        &:hover {
+          background-color: #f64e60;
+          svg {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .slagFileUrsl {
+    width: 40px;
+    height: 40px;
+    border-radius: 1000px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1000px;
+      object-fit: cover;
+    }
+  }
+}
+
+.view-modal {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.055);
+    padding-bottom: 8px;
+    svg {
+      color: rgba(0, 0, 0, 0.63);
+    }
+    h1 {
+      @include all-design(black, 25px, normal, 500, 24px);
+    }
+  }
+  &-body {
+    label {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      margin-top: 20px;
+      h1 {
+        @include all-design(black, 16px, normal, 500, 24px);
+        padding: 9px;
+        background-color: rgba(0, 0, 0, 0.075);
+      }
+      .view-modal-body-common {
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        padding: 12px 9px;
+        gap: 12px;
+        h2 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.623);
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  body {
+    min-width: 1200px;
+    overflow-x: auto;
+  }
+}
+.crocusoft-logout {
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0.95;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.0016em;
+    color: #fff;
+    margin-left: 12px;
+    background-color: unset;
+    border: none;
+
+  }
+  span {
+    svg {
+      width: 23px;
+      height: 23px;
+      color: #fff;
+      path{
+        stroke: #fff;
+      }
+    }
+  }
+}

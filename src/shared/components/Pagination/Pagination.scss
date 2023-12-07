@@ -1,0 +1,44 @@
+.Pagination {
+  .MuiToolbar-root {
+    padding: 0 !important;
+    li {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px !important;
+      line-height: 18px;
+      letter-spacing: 0.0016em;
+      color: #374253;
+    }
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.0016em;
+      color: #374253;
+    }
+    .MuiSelect-select {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.0016em;
+      color: #374253;
+    }
+  }
+  .MuiTablePagination-actions {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    .MuiButtonBase-root {
+      border: 1.5px solid #374253;
+      padding: 4px;
+    }
+    gap: 10px;
+    display: flex;
+  }
+}

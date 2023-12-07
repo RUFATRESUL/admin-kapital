@@ -1,0 +1,45 @@
+.CustomOffices {
+  padding-block: 12px;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  &_Title {
+    padding-block: 12px;
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: 0.0016em;
+      color: #13181e;
+    }
+  }
+  &_Table {
+    border-radius: 12px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    &_Create {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        background-color: #00bb0c27;
+        padding: 10px;
+        border-radius: 100%;
+        svg {
+          width: 19px;
+          height: 19px;
+          fill: #00bb0c;
+        }
+        &:hover {
+          background-color: #00bb0c;
+          svg {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

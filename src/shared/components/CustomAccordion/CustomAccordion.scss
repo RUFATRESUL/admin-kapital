@@ -1,0 +1,74 @@
+@import "src/style/globalmixins.scss";
+
+.CustomAccordion {
+  padding: 16px;
+  border-top: 2px solid #dadcde;
+  .MuiPaper-root {
+    &.Mui-expanded {
+      background: rgba(255, 255, 255, 0.4);
+      border: 1px solid #14458d;
+      box-shadow: 0px 0px 20px rgba(8, 30, 64, 0.1);
+      border-radius: 12px;
+      .MuiAccordionSummary-content {
+        p {
+          color: #14458d;
+        }
+      }
+      .MuiAccordionSummary-expandIconWrapper {
+        svg {
+          color: #14458d;
+        }
+      }
+      .MuiButtonBase-root {
+        border-bottom: 1px solid #0c2c5b6b;
+      }
+    }
+  }
+  .MuiPaper-root {
+    box-shadow: none;
+  }
+  .MuiAccordionSummary-content {
+    p {
+      @include all-design(#13181e, 18px, normal, 500, 27px);
+    }
+  }
+  .MuiAccordionDetails-root {
+    &:nth-child(1) {
+      border-bottom: 1px solid #0c2c5b6b;
+    }
+    .CustomAccordion-center {
+      h1 {
+        @include all-design(#13181e, 16px, normal, 600, 19px);
+        padding-top: 24px;
+      }
+      label {
+        padding-top: 21px;
+        display: flex;
+        align-items: center;
+        p {
+          @include all-design(#13181e, 16px, normal, 400, 19px);
+        }
+        svg {
+          margin-right: 20px;
+          height: 22px;
+          width: 22px;
+        }
+      }
+    }
+    .CustomAccordion-end {
+      padding-top: 20px;
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 16px;
+        p {
+          @include all-design(#13181e, 16px, normal, 500, 24px);
+        }
+        span {
+          @include all-design(#13181e, 16px, normal, 400, 19px);
+        }
+      }
+    }
+  }
+}

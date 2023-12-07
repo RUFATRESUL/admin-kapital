@@ -1,0 +1,77 @@
+.ControllerAccordion {
+  .MuiPaper-root {
+    // background: #eaeaea;
+    box-shadow: unset !important;
+
+    border-radius: 12px !important;
+    &.Mui-expanded {
+      border: 1px solid rgba(145, 144, 144, 0.5);
+      border-radius: 12px;
+    }
+    .MuiAccordionDetails-root {
+      padding-top: 0 !important;
+    }
+    .MuiAccordionSummary-content {
+      margin: 0 !important;
+    }
+    .MuiAccordionSummary-expandIconWrapper {
+      transform: rotate(90deg) !important;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .MuiButtonBase-root {
+      padding: 20px 22px !important;
+    }
+    &.Mui-expanded {
+      .MuiButtonBase-root {
+        border-bottom: 1px solid rgba(144, 144, 144, 0.5);
+        .MuiAccordionSummary-expandIconWrapper {
+          transform: rotate(270deg) !important;
+        }
+        min-height: unset !important;
+        padding: 16px;
+      }
+    }
+    .MuiAccordionSummary-expandIconWrapper {
+      svg {
+        path {
+          stroke: #213553 !important;
+        }
+      }
+    }
+    .Typography_Header {
+      display: flex;
+      align-items: center;
+      svg {
+        width: 30px;
+        height: 30px;
+        path {
+          fill: #14458d;
+        }
+      }
+      div {
+        margin-left: 22px;
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 0.0016em;
+          color: #13181e;
+        }
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.0016em;
+          color: #6d6e73;
+        }
+      }
+    }
+  }
+}

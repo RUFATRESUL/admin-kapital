@@ -1,0 +1,44 @@
+.innerCountry {
+  position: relative;
+  cursor: pointer;
+  background: #f2f3f5;
+  border: 1px solid #dadcde;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 14px;
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 24px;
+  }
+  a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.0016em;
+    color: #13181e;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.activeCountry {
+  background: #ffffff;
+  border: 1px solid #dadcde;
+  box-shadow: 0px 0px 20px rgba(8, 30, 64, 0.15);
+  border-radius: 12px;
+  a {
+    color: #14458d;
+  }
+  svg {
+    path {
+      stroke: #14458d;
+    }
+  }
+}

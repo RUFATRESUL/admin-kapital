@@ -1,0 +1,47 @@
+.Profile {
+  padding-top: 24px;
+  width: 100%;
+  display: flex;
+  &_Section {
+    width: 35%;
+    &_IMG {
+      display: flex;
+      justify-content: center;
+      padding: 24px 45px;
+      background: #ffffff;
+      border: 1px solid #dadcde;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      position: relative;
+      //   text-align: center;
+      &_Edit {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: #14458d;
+        padding: 10px;
+        border-radius: 1000px;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      div {
+        &:nth-child(1) {
+          width: 250px;
+          height: 250px;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 1000px;
+          }
+        }
+      }
+    }
+  }
+  &_Outlet {
+    margin-left: 24px;
+    width: 60%;
+  }
+}
