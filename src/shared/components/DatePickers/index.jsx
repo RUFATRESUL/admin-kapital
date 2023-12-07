@@ -1,65 +1,68 @@
+
 import React from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import styled from "styled-components";
-import { az } from "date-fns/locale";
 import { Calendar } from "../../../assets/svgs";
 
 const StyledDatePicker = styled(DatePicker)`
   width: 100%;
-  height: 56px;
+  height: 40px;
   border-radius: var(--space-x1);
   border: none;
-  padding: 12px 24px;
+  padding: 7px 24px;
   padding-left: 40px;
   color: #495673;
   background: #f5f5f8;
 `;
+
 const StyledDiv = styled.div`
   position: relative;
+  width: 180px;
   svg {
     position: absolute;
+    margin-top: -31px;
     display: block;
     width: 20px;
     height: 20px;
-    margin-left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15px;
+    left: 31px;
+    margin-right: 12px;
   }
 `;
-const DatePickers = ({
-  onChange,
-  selected,
-  excludeDates,
-  placeholderText,
-  minDate,
-  maxDate,
-  readOnly,
-  className,
-  value,
-}) => {
+
+const DatePickers = ({ id, value, setValue, name, maxDate, minDate }) => {
+  const [startDate, setStartDate] = React.useState(null);
+  const handleChange = (date, name) => {
+    if (date) {
+      let convertDate = new Date(
+        date.getTime() - date.getTimezoneOffset() * 60000
+      ).toISOString();
+      convertDate = convertDate.split("T")[0];
+      setStartDate(date);
+      setValue(name, convertDate);
+    } else {
+      setStartDate("");
+      setValue(name, "");
+    }
+  };
+
   return (
-    <div className="datepicker-design input-position w-100">
-      <StyledDiv className="datepicker-design input-position">
-        <StyledDatePicker
-          value={value}
-          className={className}
-          formatWeekDay={(nameOfDay) => nameOfDay.substr(0, 3)}
-          selected={selected}
-          placeholderText={placeholderText}
-          excludeDates={excludeDates}
-          onChange={onChange}
-          minDate={minDate}
-          maxDate={maxDate}
-          readOnly={readOnly}
-          showPopperArrow={false}
-          locale={az}
-          dateFormat="yyyy-MM-dd"
-        />
-        <Calendar />
-      </StyledDiv>
-    </div>
+    <StyledDiv className="date-picker">
+      <StyledDatePicker
+        dateFormat="yyyy-MM-dd"
+        showMonthDropdown
+        showYearDropdown
+        placeholderText="Bütün tarix"
+        onChange={(date) => handleChange(date, name)}
+        minDate={minDate}
+        maxDate={maxDate}
+        selected={startDate}
+        value={value}
+        id={id}
+        name={name}
+      />
+      <Calendar />
+    </StyledDiv>
   );
 };
 

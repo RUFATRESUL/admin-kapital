@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import SideLogo from "shared/media/img/SideLogo.png";
 import { RenderIf } from "src/shared/components";
@@ -14,11 +14,11 @@ import { ExposureTwoTone, Logout } from "@mui/icons-material";
 
 const SideMenu = () => {
   const dispatch = useDispatch();
+  const {pathname} = useLocation()
 
   const logoutHandler = () => {
     dispatch(logout());
   };
-
   return (
     <div style={{ width: "346px" }}>
       <div className={`${styles.SideMenu} `}>
