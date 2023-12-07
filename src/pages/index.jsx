@@ -13,6 +13,7 @@ import { Urls } from "shared/constants/url";
 import Header from "shared/layout/Header";
 import Cover from "shared/modules/Cover";
 import Login from "pages/Landing/Login";
+import Reset from "./Landing/Reset";
 
 const Router = () => {
   const IS_AUTHENTICATED = Boolean(useSelector((state) => state?.user?.user));
@@ -22,10 +23,15 @@ const Router = () => {
       <RenderIf condition={!IS_AUTHENTICATED}>
         <Routes>
           <Route path={Urls?.LOGIN_URL} element={<Login />} />
-          <Route path={Urls?.RESET_PASSWORD_URL} element={<ResetPassword />} />
+          <Route path={Urls?.RESET_PASSWORD_REQUEST_URL} element={<ResetPassword />} />
           <Route
             path={Urls?.FORGOT_PASSWORD_URL}
             element={<ForgotPassword />}
+          />
+
+          <Route
+            path={Urls?.RESET_PASSWORD_URL}
+            element={<Reset />}
           />
           <Route path="*" element={<Navigate to="/login" />} />
         </Routes>

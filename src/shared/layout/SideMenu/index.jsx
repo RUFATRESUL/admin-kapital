@@ -92,6 +92,7 @@ import {
   Building, Edit, Folder
 
 } from 'src/assets/svgs';
+import { Urls } from 'src/shared/constants/url';
 const { Header, Sider, Content } = Layout;
 
 
@@ -125,7 +126,7 @@ const SideMenu = () => {
       key: '3',
       icon: <Users />,
       label: 'Sistem istifadəçiləri',
-      url: "/test3"
+      url: "/users"
 
     },
 
@@ -224,32 +225,32 @@ const SideMenu = () => {
         {
           key: '7',
           label: 'Baş ofis',
-          // url: Urls.test16,
-          // isActive: pathname === Urls.test16,
+          url: Urls.STRUCTURE_MAIN_OFFICES,
+          isActive: pathname === Urls.STRUCTURE_MAIN_OFFICES,
         },
         {
           key: '8',
           label: 'Filiallar',
-          // url: Urls.test17,
-          // isActive: pathname === Urls.test17,
+          url: Urls.STRUCTURE_BRANCHES,
+          isActive: pathname === Urls.STRUCTURE_BRANCHES,
         },
         {
           key: '8',
           label: 'Bölmələr',
-          // url: Urls.test17,
-          // isActive: pathname === Urls.test17,
+          url: Urls.STRUCTURE_SECTIONS,
+          isActive: pathname === Urls.STRUCTURE_SECTIONS,
         },
         {
           key: '8',
           label: 'Şöbələr',
-          // url: Urls.test17,
-          // isActive: pathname === Urls.test17,
+          url: Urls.STRUCTURE_DEPARTAMENTS,
+          isActive: pathname === Urls.STRUCTURE_DEPARTAMENTS,
         },
         {
           key: '8',
           label: 'Vəzifələr',
-          // url: Urls.test17,
-          // isActive: pathname === Urls.test17,
+          url: Urls.STRUCTURE_POSITIONS,
+          isActive: pathname === Urls.STRUCTURE_POSITIONS,
         },
       ],
     },

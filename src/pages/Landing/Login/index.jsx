@@ -48,17 +48,17 @@ const Login = () => {
       </div>
       <div className={`${styles.LoginRight} col-lg-7 col-6`}>
         <h6 style={{ visibility: "hidden" }}>.</h6>
-        <form onSubmit={formik.handleSubmit} className={styles.LoginRightInput}>
+        <form onSubmit={formik.handleSubmit} className={`${styles.LoginRightInput} col-lg-6 mx-auto` }>
           <h1>Giriş</h1>
           <div className={styles.LoginRightInputEmail}>
-            <p>User Name</p>
+            <p>Email</p>
             <Input
               errors={formik.errors.userName && formik.touched.userName}
               nameError={formik.errors.userName}
               id="userName"
               type="text"
               name="userName"
-              placeholder="İsdifadəçi adı daxil edin"
+              placeholder="Email"
               value={formik.values.userName}
               onChange={formik.handleChange}
               className="w-100"
@@ -66,7 +66,7 @@ const Login = () => {
           </div>
           <div className="text-center text-danger ">{formik.errors.email}</div>
           <div className={styles.LoginRightInputPassword}>
-            <p>Password</p>
+            <p>Şifrə</p>
             <Input
               errors={formik.errors.password && formik.touched.password}
               nameError={formik.errors.password}
@@ -85,6 +85,7 @@ const Login = () => {
               <Visibility role="button" onClick={handlerSeeText} />
             </RenderIf>
           </div>
+          <Link className={styles.LinkColor} to={Urls.RESET_PASSWORD_REQUEST_URL}>Şifrənizi unutmusunuz?</Link>
           {/* <Link to={Urls?.FORGOT_PASSWORD_URL}>
             <p>Forgot your password?</p>
           </Link> */}
@@ -101,7 +102,7 @@ const Login = () => {
               // onClick={loginUserHandler}
               type="submit"
               color="#ffffff"
-              children="Login"
+              children="Daxil ol"
               disabled={isLoading}
               isLoading={isLoading}
               background="#14458D"
