@@ -10,4 +10,6 @@ export const Urls = {
   PROFILE_INFO: "information",
   PROFILE_PERMISSIONS: "permissions",
   PROFILE_CHANGE_PASSWORD: "change-password",
+  FOLDERS: "/folders",
+
 };

@@ -9,7 +9,7 @@ const SvgEdit = (props) => (
     {...props}
   >
     <path
-      stroke="#091E42"
+      // stroke="#091E42"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}

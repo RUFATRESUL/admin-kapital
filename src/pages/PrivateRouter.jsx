@@ -11,9 +11,13 @@ import Continents from "./Continents";
 import Countries from "./Countries";
 import Roles from "./Roles";
 
+import Folders from "./Folders";
+
 const PrivateRouter = () => {
   return (
     <Routes>
+      <Route path={Urls.FOLDERS} element={<Folders />} />
+
       <Route path={Urls.CUSTOMS_OFFICES} element={<CustomsOffices />} />
       <Route path={Urls.CONTINENTS} element={<Continents />} />
       <Route path={Urls.COUNTRIES} element={<Countries />} />

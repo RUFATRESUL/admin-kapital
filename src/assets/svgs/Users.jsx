@@ -9,7 +9,7 @@ const SvgUsers = (props) => (
     {...props}
   >
     <path
-      stroke="#091E42"
+      stroke="#E34935"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
