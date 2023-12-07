@@ -6,7 +6,7 @@ import { useFormik } from "formik";
 
 import { useLoginUserMutation } from "src/redux/api/authApi/authApi";
 import { Button, Input, RenderIf } from "shared/components";
-import Logo from "src/shared/media/img/SideLogo.png";
+import Logo from "src/shared/media/img/kapital.png";
 import { Urls } from "src/shared/constants/url";
 import { loginSchema } from "src/validation";
 import { Country } from "./data";
@@ -41,44 +41,15 @@ const Login = () => {
   return (
     <div className={`${styles.Login} col-lg-12 col-12 d-flex  w-100`}>
       <div
-        className={`${styles.LoginLeft} col-lg-6 col-6 d-flex flex-column justify-content-between`}
+        className={`col-lg-5 col-6 d-flex flex-column justify-content-between`}
       >
-        <div className={styles.LoginLeftLogo}>
-          <div>
-            <img src={Logo} alt="" />
-          </div>
-          {/* <Logo /> */}
-          <h1>
-            Trans-Caspian International East-West Middle Corridor (Admin Panel){" "}
-          </h1>
-        </div>
-        <div className={styles.LoginLeftAbout}>
-          <h1>Middle Corridor's Gateway to Effortless Transit</h1>
-          <p>
-            Welcome to the Middle Corridor's transit web portal, gateway to
-            effortless transit. Multilateral mechanism between customs
-            administration of the countries located along Middle Corridor..
-          </p>
-          <div className={styles.LoginLeftAboutCountry}>
-            {Country.map((item) => (
-              <div key={item?.id} role="button">
-                <span>
-                  {" "}
-                  <img src={item?.icon} alt="" />
-                </span>
-                <p>{item?.inner}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className={styles.LoginLeftYear}>
-          ©2023 Single transit portal for Middle Corridor
-        </div>
+        <img src={Logo} />
+       
       </div>
-      <div className={`${styles.LoginRight} col-lg-6 col-6`}>
+      <div className={`${styles.LoginRight} col-lg-7 col-6`}>
         <h6 style={{ visibility: "hidden" }}>.</h6>
         <form onSubmit={formik.handleSubmit} className={styles.LoginRightInput}>
-          <h1 className="text-center">Welcome to Admin Panel</h1>
+          <h1>Giriş</h1>
           <div className={styles.LoginRightInputEmail}>
             <p>User Name</p>
             <Input
@@ -137,12 +108,12 @@ const Login = () => {
             />
           </div>
         </form>
-        <div className={styles.LoginRightCrocusoft}>
+        {/* <div className={styles.LoginRightCrocusoft}>
           <p>
             {" "}
             Site by <a href="https://crocusoft.com/">Crocusoft LLC</a>
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
