@@ -1,20 +1,20 @@
 import * as React from "react";
-const SvgAdd = (props) => (
+const SvgFilterLines = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
     height="1em"
     fill="none"
-    viewBox="0 0 30 30"
+    viewBox="0 0 20 20"
     {...props}
   >
     <path
-      stroke="#374253"
+      stroke="#091E42"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M7.5 15h15M15 22.5v-15"
+      strokeWidth={2}
+      d="M5 10h10M2.5 5h15m-10 10h5"
     />
   </svg>
 );
-export default SvgAdd;
+export default SvgFilterLines;

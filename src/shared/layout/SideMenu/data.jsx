@@ -5,38 +5,38 @@ import {
   PublicOutlined,
   RoomServiceRounded,
 } from "@mui/icons-material";
-import {
-  Home,
-  Messages,
-  Text,
-  Bank,
-  UserPeople,
-  MapIcon,
-} from "src/assets/svgs";
+// import {
+//   Home,
+//   Messages,
+//   Text,
+//   Bank,
+//   UserPeople,
+//   MapIcon,
+// } from "src/assets/svgs";
 
 export const SIDE_URL = [
   {
     id: 1,
     inner: "Continents",
-    icon: <PublicOutlined />,
+    // icon: <PublicOutlined />,
     url: "/continents",
   },
   {
     id: 2,
     inner: "Countries",
-    icon: <Flag />,
+    // icon: <Flag />,
     url: "/countries",
   },
   {
     id: 3,
     inner: "Customs offices",
-    icon: <Apartment />,
+    // icon: <Apartment />,
     url: "/customs-offices",
   },
   {
     id: 4,
     inner: "Roles",
-    icon: <UserPeople />,
+    // icon: <UserPeople />,
     url: "/roles",
   },
 

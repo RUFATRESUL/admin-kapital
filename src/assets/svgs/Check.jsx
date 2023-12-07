@@ -1,21 +1,20 @@
 import * as React from "react";
-const SvgTransportPlus = (props) => (
+const SvgCheck = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
     height="1em"
     fill="none"
-    viewBox="0 0 32 32"
+    viewBox="0 0 20 20"
     {...props}
   >
-    <circle cx={16} cy={16} r={16} fill="#14458D" />
     <path
-      stroke="currentColor"
+      stroke="#22A06B"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M11 16h10M16 21V11"
+      strokeWidth={2}
+      d="M16.665 5 7.5 14.167 3.332 10"
     />
   </svg>
 );
-export default SvgTransportPlus;
+export default SvgCheck;

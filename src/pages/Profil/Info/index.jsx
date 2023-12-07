@@ -9,7 +9,7 @@ import {
 import { Button, Input, RenderIf } from "src/shared/components";
 import ReactSelect from "src/shared/components/ReactSelect";
 import { userEditPermissionsSchema } from "src/validation";
-import { Edit, EditProf, Logo } from "src/assets/svgs";
+// import { Edit, EditProf, Logo } from "src/assets/svgs";
 import { ProfileContext } from "..";
 
 import styles from "./Info.module.scss";
@@ -141,7 +141,7 @@ export const Info = () => {
       <div className={styles.Info_Header}>
         <h1>Profile Information</h1>
         <button onClick={handlerProfilEdit} className={styles.Info_Header_SVG}>
-          <EditProf />
+          {/* <EditProf /> */}
         </button>
       </div>
       <RenderIf condition={!isShowEdit}>

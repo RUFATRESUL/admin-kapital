@@ -15,7 +15,7 @@ import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
-import { TableEdit } from "src/assets/svgs";
+// import { TableEdit } from "src/assets/svgs";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import { imgBaseUrl } from "src/redux/api/axiosBase";
@@ -92,7 +92,7 @@ function Row({ row, setModalVisiblity, index }) {
                 handleEditModal(row?.id);
               }}
             >
-              <TableEdit />
+              {/* <TableEdit /> */}
             </div>
           </RenderIf>
         </TableCell>

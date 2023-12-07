@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Search } from "../../../assets/svgs";
+import { SearchMd } from "../../../assets/svgs";
 import styles from "./Input.module.scss";
 import RenderIf from "../RenderIf";
 
@@ -89,7 +89,7 @@ const Input = ({
         </span>
       </RenderIf>
       <RenderIf condition={icon}>
-        <Search />
+        <SearchMd />
       </RenderIf>
     </div>
   );

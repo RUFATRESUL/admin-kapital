@@ -7,7 +7,7 @@ import InnerCountry from "src/shared/components/InnerCountry";
 import { imgBaseUrl } from "src/redux/api/axiosBase";
 import { RenderIf } from "src/shared/components";
 import { Urls } from "src/shared/constants/url";
-import { Camera, Logo } from "src/assets/svgs";
+import { SearchMd } from "src/assets/svgs";
 import { profileSettings } from "./data";
 
 import styles from "./Profile.module.scss";
@@ -62,7 +62,7 @@ export const Profile = () => {
                 className={styles.Profile_Section_IMG_Edit}
                 onClick={handleDivClick}
               >
-                <Camera />
+                <SearchMd />
               </div>
               <div className="ProfileImgDiv d-none">
                 <input

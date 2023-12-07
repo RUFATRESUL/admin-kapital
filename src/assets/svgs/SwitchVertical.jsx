@@ -1,27 +1,27 @@
 import * as React from "react";
-const SvgClock = (props) => (
+const SvgSwitchVertical = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
     height="1em"
     fill="none"
-    viewBox="0 0 22 22"
+    viewBox="0 0 20 20"
     {...props}
   >
     <path
-      stroke="#14458D"
+      stroke="#091E42"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
-      d="M20.165 11c0 5.06-4.106 9.167-9.166 9.167-5.06 0-9.167-4.106-9.167-9.166 0-5.06 4.107-9.167 9.167-9.167s9.166 4.107 9.166 9.167Z"
+      d="M14.167 3.333v13.334m0 0-3.333-3.334m3.333 3.334 3.334-3.334"
     />
     <path
-      stroke="#14458D"
+      stroke="#B3B9C4"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
-      d="M14.4 13.916 11.56 12.22c-.495-.294-.899-1-.899-1.577V6.885"
+      d="M5.833 16.667V3.333m0 0L2.5 6.667m3.333-3.334 3.334 3.334"
     />
   </svg>
 );
-export default SvgClock;
+export default SvgSwitchVertical;

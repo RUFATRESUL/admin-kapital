@@ -5,7 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useLazyUserByIdQuery } from "src/redux/api/authApi/authApi";
 import { SIDE_URL } from "shared/layout/SideMenu/data";
 import { imgBaseUrl } from "src/redux/api/axiosBase";
-import { NotificationBing } from "src/assets/svgs";
+// import { NotificationBing } from "src/assets/svgs";
 import { Urls } from "src/shared/constants/url";
 
 import styles from "./Header.module.scss";

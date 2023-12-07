@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-import { ArrowRight } from "src/assets/svgs";
+import { SearchMd } from "src/assets/svgs";
 import RenderIf from "../RenderIf";
 
 import "./InnerCountry.scss";
@@ -26,7 +26,7 @@ const InnerCountry = ({ to, name, isSuccess, route, minId }) => {
         <Link to="">
           <RenderIf condition={name}>{name}</RenderIf>
         </Link>
-        <ArrowRight />
+        <SearchMd />
       </li>
     </>
   );

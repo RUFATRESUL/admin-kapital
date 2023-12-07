@@ -1,21 +1,20 @@
 import * as React from "react";
-const SvgArrowRight = (props) => (
+const SvgSearchMd = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
     height="1em"
     fill="none"
-    viewBox="0 0 24 24"
+    viewBox="0 0 20 20"
     {...props}
   >
     <path
-      stroke="#13181E"
+      stroke="#8590A2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeMiterlimit={10}
       strokeWidth={2}
-      d="m8.91 19.92 6.52-6.52c.77-.77.77-2.03 0-2.8L8.91 4.08"
+      d="m17.5 17.5-3.625-3.625m1.958-4.708a6.667 6.667 0 1 1-13.333 0 6.667 6.667 0 0 1 13.333 0Z"
     />
   </svg>
 );
-export default SvgArrowRight;
+export default SvgSearchMd;

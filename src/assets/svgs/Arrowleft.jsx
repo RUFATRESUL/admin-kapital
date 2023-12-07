@@ -1,11 +1,11 @@
 import * as React from "react";
-const SvgMenu = (props) => (
+const SvgArrowleft = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
     height="1em"
     fill="none"
-    viewBox="0 0 24 24"
+    viewBox="0 0 8 12"
     {...props}
   >
     <path
@@ -13,8 +13,8 @@ const SvgMenu = (props) => (
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      d="M3 12h18M3 6h18M3 18h12"
+      d="m6.5 11-5-5 5-5"
     />
   </svg>
 );
-export default SvgMenu;
+export default SvgArrowleft;

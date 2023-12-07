@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Modal } from "@mui/material";
 import { Button, RenderIf } from "src/shared/components";
 import SpinnerLarg from "src/shared/components/SpinnerLarg/SpinnerLarg";
-import { Add, UserPeople } from "src/assets/svgs";
+// import { Add, UserPeople } from "src/assets/svgs";
 import {
   AddLocation,
   Apartment,
