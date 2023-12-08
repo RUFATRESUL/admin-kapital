@@ -15,7 +15,7 @@ import { visiblity } from "src/shared/constants/modalFields";
 import { DatePickers } from "src/shared/components";
 import Create from "./modals/Create";
 import Remove from "./modals/Remove";
-// import View from "./modals/View";
+import View from "./modals/View";
 import Edit from "./modals/Edit";
 
 import styles from "./Folders.module.scss";
@@ -84,7 +84,7 @@ const CustomsOffices = () => {
     setSearch(e.target.value);
     setPage(0);
   };
-
+console.log(isViewModal,"isViewModal")
   return (
     <>
       <div className={styles.CustomOffices}>
@@ -152,14 +152,11 @@ const CustomsOffices = () => {
           </div>
         </RenderIf>
       </div>
-      {/* <View
-        handleViewModal={handleViewModal}
-        customOfficeByIdIsLoading={customOfficeByIdIsLoading}
-        customOfficeByIdData={customOfficeByIdData}
+      <View
         setIsViewModal={setIsViewModal}
         visiblity={visiblity}
         isViewModal={isViewModal}
-      /> */}
+      />
       <Create
         handleCreateModal={handleCreateModal}
         setIsViewModal={setIsViewModal}

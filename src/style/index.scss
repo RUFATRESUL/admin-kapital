@@ -762,7 +762,6 @@ li {
   }
 }
 
-
 .react-datepicker-popper {
   transform: translate(-60px, 40px) !important;
 }
@@ -790,11 +789,17 @@ li {
   }
 }
 
-.modal-header {
+.modal-header,
+.view-modal-header {
   border-bottom: 1px solid var(--dashboard-neutral-200, #dcdfe4);
   background: var(--dashboard-neutral-100, #f1f2f4);
 
+  .modal-title,
+  h1 {
+
+
   .modal-title {
+
     color: var(--dashboard-neutral-900, #091e42);
     font-family: Inter;
     font-size: 18px;
@@ -804,12 +809,17 @@ li {
   }
 }
 
+
 .modal-footer {
   border: none !important;
 }
 
 .ant-menu li a {
+
+  color: #091e42 !important;
+
   color: #091E42 !important;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -831,8 +841,14 @@ li {
 
 
 .ant-layout-sider {
+  border-right: 1px solid var(--dashboard-neutral-200, #dcdfe4);
+  background: var(--dashboard-neutral-1, #fff) !important;
+
+
+.ant-layout-sider {
   border-right: 1px solid var(--dashboard-neutral-200, #DCDFE4);
   background: var(--dashboard-neutral-1, #FFF) !important;
+
 }
 
 .ant-image {
@@ -857,7 +873,7 @@ li {
 }
 
 .ant-menu-dark .ant-menu-item-selected {
-  background-color: #E34935;
+  background-color: #e34935;
 }
 
 .ant-menu-dark .ant-menu-item-selected a {
@@ -871,10 +887,19 @@ li {
 
 .ant-menu-submenu ul li {
   border-radius: 8px;
-  background: rgba(227, 73, 53, 0.10);
+  background: rgba(227, 73, 53, 0.1);
 }
 
 .ant-menu-submenu ul li a {
+  color: #e34935 !important;
+}
+
+.ant-menu-submenu i {
+  color: #091e42 !important;
+}
+
+.ant-menu-submenu span {
+  color: #091e42 !important;
   color: #E34935 !important;
 }
 
@@ -895,7 +920,36 @@ li {
 
 .ant-menu-dark .ant-menu-item-selected svg {
   stroke: #fff !important;
+}
 
+
+
+ .MuiTableRow-head th {
+  max-width: 100px ;
+}
+
+
+.view-modal-table .table-container .MuiTableBody-root tr td {
+  max-width: 100px !important;
+  width: 100px !important;
+}
+.view-modal-table .table-container .MuiTableRow-head th:last-child {
+  max-width: 50px !important;
+}
+
+.view-modal-table .MuiTableBody-root tr td:last-child{
+  max-width: 50px !important;
+  width: 50px !important;
+}
+
+
+.view-modal-table .table-container .MuiTableBody-root tr td:first-child{
+  color: var(--dashboard-focus-blue-500, #1D7AFC);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
 }
 
 .radio-buttons-checked {
@@ -914,4 +968,5 @@ li {
     font-weight: 500;
     line-height: 16px;
   }
+
 }
