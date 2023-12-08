@@ -3,5 +3,6 @@ export const visiblity = {
     VIEW: "VIEW",
     EDIT: "EDIT",
     DELETE: "DELETE",
+    DELETE_PROFILE: "DELETE_PROFILE",
     CLOSE_ALL: "CLOSE_ALL",
   };
