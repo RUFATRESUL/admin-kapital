@@ -791,22 +791,22 @@ li {
 
 .modal-header,
 .view-modal-header {
-  border-bottom: 1px solid var(--dashboard-neutral-200, #dcdfe4);
-  background: var(--dashboard-neutral-100, #f1f2f4);
+  border-bottom: 1px solid var(--dashboard-neutral-200, #DCDFE4);
+  background: var(--dashboard-neutral-100, #F1F2F4);
 
   .modal-title,
   h1 {
-
-
-  .modal-title {
-
-    color: var(--dashboard-neutral-900, #091e42);
+    color: var(--dashboard-neutral-900, #091E42);
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
   }
+}
+
+.modal-footer {
+  border: none !important;
 }
 
 
@@ -843,7 +843,7 @@ li {
 .ant-layout-sider {
   border-right: 1px solid var(--dashboard-neutral-200, #dcdfe4);
   background: var(--dashboard-neutral-1, #fff) !important;
-
+}
 
 .ant-layout-sider {
   border-right: 1px solid var(--dashboard-neutral-200, #DCDFE4);
@@ -924,8 +924,8 @@ li {
 
 
 
- .MuiTableRow-head th {
-  max-width: 100px ;
+.MuiTableRow-head th {
+  max-width: 100px;
 }
 
 
@@ -933,23 +933,25 @@ li {
   max-width: 100px !important;
   width: 100px !important;
 }
+
 .view-modal-table .table-container .MuiTableRow-head th:last-child {
   max-width: 50px !important;
 }
 
-.view-modal-table .MuiTableBody-root tr td:last-child{
+.view-modal-table .MuiTableBody-root tr td:last-child {
   max-width: 50px !important;
   width: 50px !important;
 }
 
 
-.view-modal-table .table-container .MuiTableBody-root tr td:first-child{
+.view-modal-table .table-container .MuiTableBody-root tr td:first-child {
   color: var(--dashboard-focus-blue-500, #1D7AFC);
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 18px; /* 128.571% */
+  line-height: 18px;
+  /* 128.571% */
 }
 
 .radio-buttons-checked {
@@ -969,4 +971,16 @@ li {
     line-height: 16px;
   }
 
+}
+
+.ant-menu-submenu-title {
+  svg{
+    stroke: #091E42;
+  }
+}
+
+.ant-menu-title-content{
+  svg{
+    stroke: #091E42;
+  }
 }
