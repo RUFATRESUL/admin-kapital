@@ -3,11 +3,6 @@
 .ResetPassword {
   height: 100vh;
 
-  img {
-    height: 100vh;
-    object-fit: cover;
-  }
-
   &Left {
     padding: 40px 100px !important;
     background: #14458d;
@@ -37,7 +32,6 @@
         line-height: 23px;
         letter-spacing: 0.03em;
         color: #fdfdfd;
-        text-align: left !important;
       }
     }
 
@@ -78,6 +72,11 @@
     &Year {
       @include all-design(#ffffff, 14px, normal, 400, 21px);
     }
+  }
+
+  img{
+    height: 100vh;
+    object-fit: cover;
   }
 
   &Right {
@@ -193,4 +192,25 @@
   text-align: center !important;
   margin-top: 20px;
 
+}
+
+.ResetOtp {
+  color: var(--dashboard-neutral-900, #091E42);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 20px;
+
+  strong {
+    font-weight: 600;
+
+  }
+
+  h4 {
+    color: var(--dashboard-focus-red-500, #E34935);
+    font-weight: 500;
+    display: inline;
+  }
 }

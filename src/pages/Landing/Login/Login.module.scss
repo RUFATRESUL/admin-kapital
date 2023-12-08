@@ -4,6 +4,12 @@
   height: 100vh;
   align-items: center;
 
+  img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+
   &Left {
     padding: 40px 100px !important;
     background: #14458d;
@@ -35,6 +41,9 @@
         color: #fdfdfd;
       }
     }
+
+
+
 
     &About {
       h1 {
@@ -88,7 +97,7 @@
     padding-block: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 
     &Input {
       margin-inline: 100px;
@@ -175,4 +184,25 @@
       }
     }
   }
+}
+
+.LinkColor {
+  color: var(--dashboard-focus-blue-500, #1D7AFC) !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.LoginPasswordBack {
+  color: var(--dashboard-neutral-600, #44546F) !important;
+  font-family: Inter;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 20px;
+  text-align: center !important;
+  display: block;
+  margin-top: 20px !important;
+
 }
