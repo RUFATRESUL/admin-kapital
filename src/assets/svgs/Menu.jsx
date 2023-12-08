@@ -5,12 +5,16 @@ const SvgMenu = (props) => (
     width="1em"
     height="1em"
     fill="none"
-    viewBox="0 0 20 20"
+    viewBox="0 0 24 24"
     {...props}
   >
-    <g stroke="#13181E" strokeLinecap="round" strokeWidth={1.5} opacity={0.9}>
-      <path d="M2.5 5.833h15M2.5 10h15M2.5 14.167h15" />
-    </g>
+    <path
+      stroke="#44546F"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M3 12h18M3 6h18M3 18h12"
+    />
   </svg>
 );
 export default SvgMenu;

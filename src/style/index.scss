@@ -4,11 +4,13 @@
 @import "reset";
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "stepper.scss";
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   font-size: 100% !important;
@@ -16,24 +18,30 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter" !important;
-  background-color: #fcfdfd !important;
+  // background-color: #fcfdfd !important;
   line-height: 1.3 !important;
 }
+
 .h-100vh {
   height: 100vh !important;
 }
+
 .h-100 {
   height: 100% !important;
 }
+
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
+
 .crocusoft-link {
   margin-bottom: 10px;
   align-items: center;
+
   h1 {
     font-family: "Inter";
     font-style: normal;
@@ -42,16 +50,18 @@ li {
     line-height: 15px;
     color: #ffffff;
   }
+
   a {
-    display: inline;
     display: flex;
     align-items: center;
     color: #ffffff;
     font-size: 14px;
+
     img {
       margin-inline: 7px;
     }
   }
+
   span {
     font-family: "Inter";
     font-style: normal;
@@ -62,6 +72,7 @@ li {
     color: #ffffff;
   }
 }
+
 .active {
   background: #ffffff;
   border-radius: 12px;
@@ -75,6 +86,7 @@ li {
   color: #14458d !important;
   text-align: justify;
 }
+
 .activeTab {
   background: #bebbbbd2 !important;
   // border-radius: 12px;
@@ -179,9 +191,11 @@ li {
   border: 1px solid #dddddd !important;
   border-radius: 8px !important;
 }
+
 .react-datepicker__navigation-icon {
   top: 1px !important;
 }
+
 .react-datepicker__navigation--next {
   margin-top: 16px !important;
   margin-right: 12px !important;
@@ -222,8 +236,9 @@ li {
   border: 1px solid #dddddd !important;
   // width: 10px !important;
 }
+
 .MuiTableHead-root {
-  background: #f2f3f5;
+  background: var(--dashboard-focus-blue-50, #e9f2ff);
 
   tr {
     th {
@@ -238,8 +253,10 @@ li {
     }
   }
 }
+
 .tableBodyIsOpen {
   &:nth-child(2n-1) {
+
     th,
     td {
       color: #14458d !important;
@@ -257,6 +274,7 @@ li {
   .childTable {
     tr {
       &:nth-last-child(2) {
+
         th,
         td {
           padding-inline: 55px;
@@ -265,12 +283,14 @@ li {
           color: #6d6e73 !important;
         }
       }
+
       &:nth-child(2) {
         th {
           padding-inline: 55px !important;
           border: none !important;
           color: #374253 !important;
         }
+
         td {
           padding-inline: 55px;
           border: none;
@@ -279,6 +299,7 @@ li {
       }
     }
   }
+
   .tableEditIcon {
     background-color: red;
     padding: 5px 4px;
@@ -288,12 +309,15 @@ li {
     text-align: center;
     height: 40px;
     width: 40px;
+
     svg {
       height: 20px;
       width: 20px;
     }
   }
+
   tr {
+
     td,
     th {
       font-family: "Inter";
@@ -312,11 +336,15 @@ li {
   .MuiFormControl-fullWidth {
     max-width: 100%;
   }
+
   background: #0c1118da;
+
   .modal-dialog {
     max-width: 842px;
+
     .modal-content {
       background: #f9fafb;
+
       .modal-header {
         position: relative;
 
@@ -325,10 +353,12 @@ li {
           position: absolute;
           right: 16px;
           top: 16px;
+
           svg {
             width: 24px;
             height: 24px;
-            transform: rotate(45deg);
+            transform: rotate(45deg) !important;
+
             path {
               stroke: #13181e;
             }
@@ -338,15 +368,20 @@ li {
     }
   }
 }
+
 .all-delete-modal {
   .MuiFormControl-fullWidth {
     max-width: 100%;
   }
+
   background: #0c1118da;
+
   .modal-dialog {
     max-width: 542px;
+
     .modal-content {
       background: #f9fafb;
+
       .modal-header {
         position: relative;
 
@@ -355,19 +390,23 @@ li {
           position: absolute;
           right: 16px;
           top: 16px;
+
           svg {
             width: 24px;
             height: 24px;
-            transform: rotate(45deg);
+            transform: rotate(45deg) !important;
+
             path {
               stroke: #13181e;
             }
           }
         }
       }
+
       .modal-body {
         padding: 32px 15px;
       }
+
       .modal-footer {
         border: none;
         display: flex;
@@ -377,10 +416,16 @@ li {
     }
   }
 }
+
+.fade {
+  background: rgba(12, 17, 24, 0.4);
+}
+
 .FormControlInput {
   background: #ffffff;
   border: 1px solid #dadcde;
   border-radius: 12px !important;
+
   .MuiSelect-outlined,
   .MuiInputBase-input {
     padding: 12.5px 16px;
@@ -407,6 +452,7 @@ li {
   width: 78px;
   height: 64px;
   background: rgba(20, 69, 141, 0.1);
+
   .ProfileImgDiv {
     position: absolute;
     margin-bottom: 20px;
@@ -436,6 +482,7 @@ li {
     }
   }
 }
+
 .previewDiv {
   position: relative;
 
@@ -447,6 +494,7 @@ li {
     object-fit: cover;
   }
 }
+
 .MultipleSelect {
   .select__control {
     background: #ffffff !important;
@@ -454,9 +502,11 @@ li {
     border-radius: 8px !important;
     box-shadow: none !important;
   }
+
   .select__value-container {
     padding: 10px !important;
   }
+
   .select__multi-value__label {
     font-family: "Inter";
     font-style: normal;
@@ -466,32 +516,39 @@ li {
     letter-spacing: 0.0016em;
     color: #051327;
   }
+
   .select__multi-value {
     background: none !important;
   }
+
   .select__clear-indicator {
     display: none !important;
   }
+
   .select__indicator-separator {
     display: none !important;
   }
 }
+
 .User_Table_Person_Img {
   margin-right: 16px;
   overflow: hidden;
   width: 40px;
   height: 40px;
   border-radius: 100%;
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 }
+
 .StepBar {
   position: relative;
   top: -1px;
 }
+
 .landing-error {
   font-family: "Inter";
   font-size: 15px;
@@ -501,76 +558,108 @@ li {
 }
 
 .table-container {
-  overflow: unset !important;
+  // overflow: unset !important;
+  border-radius: 8px !important;
+
+  background: var(--dashboard-neutral-1, #fff);
+  box-shadow: unset !important;
+
   .MuiTableRow-head {
     th {
-      font-size: 13px;
-      font-weight: bold;
       border: 1px solid #dadcde;
-      padding: 8px 8px;
+      padding: 15px 8px;
+      color: var(--dashboard-neutral-900, #091e42);
+
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+      /* 125% */
     }
   }
+
+  .MuiTableRow-root:nth-child(even) {
+    background: var(--dashboard-neutral-50, #f7f8f9);
+  }
+
   .MuiTableBody-root {
     tr {
       background-color: transparent;
+
       th,
       td {
-        font-size: 13px !important;
         border: 1px solid #dadcde;
-        padding: 5px 8px;
+        padding: 7px 8px;
+        overflow: hidden;
+        color: var(--dashboard-neutral-900, #091e42);
+        text-overflow: ellipsis;
+        font-family: Inter;
+        font-size: 13px !important;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        /* 128.571% */
       }
     }
   }
+
   .table-container-oparation {
     display: flex;
     gap: 16px;
+
     button {
-      background-color: rgba(0, 0, 0, 0.048);
+      background-color: transparent;
       padding: 7px;
-      border-radius: 10px;
+      border-radius: 50%;
+      border: 1px solid var(--dashboard-neutral-200, #dcdfe4);
+
       svg {
         width: 19px;
         height: 19px;
+        stroke: #e34935 !important;
       }
-      &:nth-child(1) {
-        svg {
-          fill: #8950fc;
-        }
-        &:hover {
-          background-color: #8950fc;
-          svg {
-            fill: #ffffff;
-          }
-        }
-      }
-      &:nth-child(2) {
-        svg {
-          fill: black;
-        }
-        &:hover {
-          background-color: black;
-          svg {
-            fill: #ffffff;
-          }
-        }
-      }
-      &:nth-child(3) {
-        svg {
-          fill: #f64e60;
-        }
-        &:hover {
-          background-color: #f64e60;
-          svg {
-            fill: #ffffff;
-          }
-        }
-      }
+
+      // &:nth-child(1) {
+      //   svg {
+      //     fill: #8950fc;
+      //   }
+      //   &:hover {
+      //     background-color: #8950fc;
+      //     svg {
+      //       fill: #ffffff;
+      //     }
+      //   }
+      // }
+      // &:nth-child(2) {
+      //   svg {
+      //     fill: black;
+      //   }
+      //   &:hover {
+      //     background-color: black;
+      //     svg {
+      //       fill: #ffffff;
+      //     }
+      //   }
+      // }
+      // &:nth-child(3) {
+      //   svg {
+      //     fill: #f64e60;
+      //   }
+      //   &:hover {
+      //     background-color: #f64e60;
+      //     svg {
+      //       fill: #ffffff;
+      //     }
+      //   }
+      // }
     }
   }
+
   .slagFileUrsl {
     width: 40px;
     height: 40px;
     border-radius: 1000px;
+
     img {
       width: 100%;
       height: 100%;
@@ -586,13 +675,16 @@ li {
     justify-content: space-between;
     border-bottom: 2px solid rgba(0, 0, 0, 0.055);
     padding-bottom: 8px;
+
     svg {
       color: rgba(0, 0, 0, 0.63);
     }
+
     h1 {
       @include all-design(black, 25px, normal, 500, 24px);
     }
   }
+
   &-body {
     label {
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -600,21 +692,26 @@ li {
       overflow: hidden;
       width: 100%;
       margin-top: 20px;
+
       h1 {
         @include all-design(black, 16px, normal, 500, 24px);
         padding: 9px;
         background-color: rgba(0, 0, 0, 0.075);
       }
+
       .view-modal-body-common {
         svg {
           width: 20px;
           height: 20px;
         }
+
         padding: 12px 9px;
         gap: 12px;
+
         h2 {
           font-size: 14px;
         }
+
         p {
           font-size: 12px;
           color: rgba(0, 0, 0, 0.623);
@@ -623,12 +720,14 @@ li {
     }
   }
 }
+
 @media only screen and (max-width: 1100px) {
   body {
     min-width: 1200px;
     overflow-x: auto;
   }
 }
+
 .crocusoft-logout {
   margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.1);
@@ -636,6 +735,7 @@ li {
   border-radius: 12px;
   padding: 14px;
   text-align: center;
+
   button {
     font-family: "Inter";
     font-style: normal;
@@ -647,16 +747,240 @@ li {
     margin-left: 12px;
     background-color: unset;
     border: none;
-
   }
+
   span {
     svg {
       width: 23px;
       height: 23px;
       color: #fff;
-      path{
+
+      path {
         stroke: #fff;
       }
     }
+  }
+}
+
+.react-datepicker-popper {
+  transform: translate(-60px, 40px) !important;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+  transform: translate(157px, 0px) !important;
+}
+
+.react-datepicker__input-container input {
+  padding-left: 55px !important;
+}
+
+.react-datepicker__input-container input::placeholder {
+  color: var(--dashboard-neutral-900, #091e42);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 128.571% */
+}
+
+.Modal_Close_Icon {
+  svg {
+    transform: rotate(45deg) !important;
+  }
+}
+
+.modal-header,
+.view-modal-header {
+  border-bottom: 1px solid var(--dashboard-neutral-200, #DCDFE4);
+  background: var(--dashboard-neutral-100, #F1F2F4);
+
+  .modal-title,
+  h1 {
+    color: var(--dashboard-neutral-900, #091E42);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+.modal-footer {
+  border: none !important;
+}
+
+
+.modal-footer {
+  border: none !important;
+}
+
+.ant-menu li a {
+
+  color: #091e42 !important;
+
+  color: #091E42 !important;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.kt-aside li a svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+
+.ant-layout-has-sider {
+  height: 100vh;
+}
+
+
+.ant-layout-sider {
+  border-right: 1px solid var(--dashboard-neutral-200, #dcdfe4);
+  background: var(--dashboard-neutral-1, #fff) !important;
+}
+
+.ant-layout-sider {
+  border-right: 1px solid var(--dashboard-neutral-200, #DCDFE4);
+  background: var(--dashboard-neutral-1, #FFF) !important;
+
+}
+
+.ant-image {
+  width: unset !important;
+  height: 40px !important;
+  margin: 20px 0 10px 0;
+  padding-left: 24px;
+}
+
+.ant-image img {
+  height: 100% !important;
+}
+
+.ant-menu {
+  background-color: #fff;
+}
+
+.ant-menu svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #e34935;
+}
+
+.ant-menu-dark .ant-menu-item-selected a {
+  color: #fff !important;
+}
+
+.ant-menu .ant-menu-item {
+  margin-bottom: 10px;
+}
+
+
+.ant-menu-submenu ul li {
+  border-radius: 8px;
+  background: rgba(227, 73, 53, 0.1);
+}
+
+.ant-menu-submenu ul li a {
+  color: #e34935 !important;
+}
+
+.ant-menu-submenu i {
+  color: #091e42 !important;
+}
+
+.ant-menu-submenu span {
+  color: #091e42 !important;
+  color: #E34935 !important;
+}
+
+
+.ant-menu-submenu i {
+  color: #091E42 !important;
+}
+
+
+.ant-menu-submenu span {
+  color: #091E42 !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+
+.ant-menu-dark .ant-menu-item-selected svg {
+  stroke: #fff !important;
+}
+
+
+
+.MuiTableRow-head th {
+  max-width: 100px;
+}
+
+
+.view-modal-table .table-container .MuiTableBody-root tr td {
+  max-width: 100px !important;
+  width: 100px !important;
+}
+
+.view-modal-table .table-container .MuiTableRow-head th:last-child {
+  max-width: 50px !important;
+}
+
+.view-modal-table .MuiTableBody-root tr td:last-child {
+  max-width: 50px !important;
+  width: 50px !important;
+}
+
+
+.view-modal-table .table-container .MuiTableBody-root tr td:first-child {
+  color: var(--dashboard-focus-blue-500, #1D7AFC);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 128.571% */
+}
+
+.radio-buttons-checked {
+  margin-left: 6px;
+
+  .Mui-checked {
+    color: #E34935 !important;
+
+  }
+
+  p {
+    color: var(--dashboard-neutral-400, #8590A2);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+}
+
+.ant-menu-submenu-title {
+  svg{
+    stroke: #091E42;
+  }
+}
+
+.ant-menu-title-content{
+  svg{
+    stroke: #091E42;
   }
 }

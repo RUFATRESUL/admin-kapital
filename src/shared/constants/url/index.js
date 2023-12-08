@@ -5,9 +5,17 @@ export const Urls = {
   COUNTRIES: "/countries",
   FORGOT_PASSWORD_URL: "/forgot-password",
   LOGIN_URL: "/login",
+  RESET_PASSWORD_REQUEST_URL: "/reset-password-request",
   RESET_PASSWORD_URL: "/reset-password",
   PROFILE: "/profile/",
   PROFILE_INFO: "information",
   PROFILE_PERMISSIONS: "permissions",
   PROFILE_CHANGE_PASSWORD: "change-password",
+  FOLDERS: "/folders",
+  STRUCTURE_MAIN_OFFICES: "/structure/main-offices",
+  STRUCTURE_BRANCHES: "/structure/braches",
+  STRUCTURE_SECTIONS: "/structure/sections",
+  STRUCTURE_DEPARTAMENTS: "/structure/departamemts",
+  STRUCTURE_POSITIONS: "/structure/positions",
+  SYSTEM_USERS: "/users"
 };

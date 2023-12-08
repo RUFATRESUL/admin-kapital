@@ -6,7 +6,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useLoginUserMutation } from "src/redux/api/authApi/authApi";
 import { Button, Input, RenderIf } from "shared/components";
-import { ArrowRight } from "src/assets/svgs";
+import { SearchMd } from "src/assets/svgs";
 import { Urls } from "src/shared/constants/url";
 import Logo from "src/shared/media/img/SideLogo.png";
 import { Country } from "./data";
@@ -107,7 +107,7 @@ const ForgotPassword = () => {
           </div>
           <div className={styles.ForgotPasswordRightInputBack}>
             <Link to={Urls?.LOGIN_URL}>
-              <ArrowRight />
+              <SearchMd/>
               Back to <span style={{ color: "#14458d" }}>login</span>
             </Link>
           </div>

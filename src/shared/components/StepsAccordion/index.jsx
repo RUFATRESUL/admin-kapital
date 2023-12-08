@@ -5,13 +5,13 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "./StepsAccordion.scss";
-import { ArrowRight } from "../../../assets/svgs";
+import { SearchMd } from "../../../assets/svgs";
 const StepsAccordion = ({ children, title }) => {
   return (
     <div className="StepsAccordion">
       <Accordion>
         <AccordionSummary
-          expandIcon={<ArrowRight />}
+          expandIcon={<SearchMd />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >

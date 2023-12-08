@@ -20,7 +20,7 @@ import { useSelector } from "react-redux";
 import { RoleName } from "src/shared/constants/role";
 
 const Continents = () => {
-  const { roleName } = useSelector((state) => state?.user?.user);
+  const roleName  = useSelector((state) => state?.user?.user?.roleName);
 
   const [openCreatedModal, setOpenCreateModal] = useState(false);
   const [openViewModal, setOpenViewModal] = useState(false);

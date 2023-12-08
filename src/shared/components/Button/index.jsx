@@ -4,12 +4,12 @@ import RenderIf from "../RenderIf";
 import Spinner from "../Spinner";
 
 const StyledButton = styled.button`
-  gap: 12px;
+  gap: 0px;
   display: flex;
   align-items: center;
   background: ${(props) => props.background};
-  border-radius: 16px;
-  padding: ${(props) => (props.pdf ? "12px" : props.padding || "16px 24px")};
+  border-radius: 8px;
+  padding: ${(props) => (props.pdf ? "12px" : props.padding || "12px 24px")};
 
   font-family: "Inter";
   font-style: normal;

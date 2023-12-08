@@ -1,0 +1,56 @@
+.CustomOffices {
+  padding-block: 12px;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  &_Title {
+    padding-block: 12px;
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: 0.0016em;
+      color: #13181e;
+    }
+  }
+  &_Table {
+    border-radius: 12px;
+    width: 100%;
+    border-radius: 8px;
+
+    //   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    &_Create {
+      padding: 20px 0px;
+      //   display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        border-radius: 8px;
+        background: var(--dashboard-focus-red-500, #e34935);
+        // display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        color: var(--dashboard-neutral-1, #fff);
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 125% */
+        svg {
+          width: 19px;
+          height: 19px;
+          fill: var(--dashboard-neutral-1, #fff);
+          margin-right: 3px;
+        }
+        &:hover {
+          background: var(--dashboard-focus-red-500, #e34935);
+          svg {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

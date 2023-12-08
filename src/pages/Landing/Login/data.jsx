@@ -1,4 +1,4 @@
-import { GeorgiaFlag, TurkeyFlag } from "src/assets/svgs";
+import { SearchMd } from "src/assets/svgs";
 import Kyrgyzstan from "src/assets/imgs/kyrgyzstan.png";
 import Kazakhstan from "src/assets/imgs/kazakhstan.png";
 import Tajikistan from "src/assets/imgs/tajikistan.png";

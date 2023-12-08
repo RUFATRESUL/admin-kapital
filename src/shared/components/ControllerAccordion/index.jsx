@@ -5,7 +5,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "./ControllerAccordion.scss";
-import { ArrowRight } from "../../../assets/svgs";
+import { SearchMd } from "../../../assets/svgs";
 const ControllerAccordion = ({
   children,
   title,
@@ -18,7 +18,7 @@ const ControllerAccordion = ({
     <div className="ControllerAccordion">
       <Accordion sx={{ background: bgColor, border: `1px solid ${border}` }}>
         <AccordionSummary
-          expandIcon={<ArrowRight />}
+          expandIcon={<SearchMd />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >

@@ -1,0 +1,216 @@
+@import "/src/style/globalmixins";
+
+.ResetPassword {
+  height: 100vh;
+
+  &Left {
+    padding: 40px 100px !important;
+    background: #14458d;
+    box-shadow: 0px 0px 26.2919px rgba(37, 65, 73, 0.08);
+
+    &Logo {
+      display: flex;
+      align-items: center;
+
+      div {
+        width: 70px;
+        height: 70px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      h1 {
+        width: 60%;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+        color: #fdfdfd;
+      }
+    }
+
+    &About {
+      h1 {
+        @include all-design(#ffffff, 28px, normal, 500, 42px);
+        padding-bottom: 16px;
+      }
+
+      p {
+        @include all-design(#ffffff, 16px, normal, 400, 24px);
+      }
+
+      &Country {
+        padding-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        h2 {
+          display: flex;
+
+          background: rgba(87, 117, 195, 0.5);
+          border: 0.5px solid #5775c3;
+          border-radius: 48px;
+          padding: 8px 14px;
+          align-items: center;
+
+          svg {
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+
+    &Year {
+      @include all-design(#ffffff, 14px, normal, 400, 21px);
+    }
+  }
+
+  img{
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  &Right {
+    padding-block: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &Input {
+      margin-inline: 100px;
+      padding: 32px;
+      // background: #ffffff;
+      // box-shadow: 0px 35px 62px rgba(0, 0, 0, 0.07);
+      border-radius: 24px;
+
+      &Text {
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        // @include all-design(#14458d, 40px, normal, 500, 60px);
+        padding-bottom: 20px;
+        color: var(--dashboard-neutral-900, #091E42);
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      p {
+        color: var(--dashboard-neutral-600, #44546F);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+
+      }
+
+      &Email {
+        width: 100%;
+
+        p {
+          padding-bottom: 8px;
+        }
+      }
+
+      &Password {
+        padding-bottom: 20px;
+
+        width: 100%;
+        display: inline-block;
+        position: relative;
+
+        svg {
+          position: absolute;
+          top: 55%;
+          transform: translateY(-50%);
+          right: 16px;
+        }
+
+        p {
+          padding-bottom: 8px;
+        }
+      }
+
+      &Button {
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+
+        button {
+          border-radius: 8px;
+          background: var(--dashboard-focus-red-500, #E34935);
+          width: 100%;
+          justify-content: center;
+
+        }
+      }
+
+      a {
+        @include all-design(#374253, 12px, normal, 400, 18px);
+        text-align: end;
+        display: block;
+      }
+    }
+
+    &Crocusoft {
+      margin-inline: 100px;
+      text-align: end;
+
+      p {
+        @include all-design(#13181e, 14px, normal, 400, 21px);
+        text-align: right;
+      }
+
+      a {
+        color: #14458d;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.ResetPasswordBack {
+  color: var(--dashboard-neutral-600, #44546F) !important;
+  font-family: Inter;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 20px;
+  text-align: center !important;
+  margin-top: 20px;
+
+}
+
+.ResetOtp {
+  color: var(--dashboard-neutral-900, #091E42);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 20px;
+
+  strong {
+    font-weight: 600;
+
+  }
+
+  h4 {
+    color: var(--dashboard-focus-red-500, #E34935);
+    font-weight: 500;
+    display: inline;
+  }
+}
